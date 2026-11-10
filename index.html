@@ -3,14 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ReCasaOS: your whole server, one dashboard</title>
-<meta name="description" content="Open-source dashboard for servers and homelabs: Docker apps, backups with restore, alerts, RAID, virtual machines and a fleet of boxes. One command to install.">
+<title>ReCasaOS: self-hosted Docker dashboard, a Portainer alternative</title>
+<meta name="description" content="Open-source, self-hosted server dashboard: Docker apps, backups, disk alerts, RAID, VMs, several servers. An alternative to Portainer, Dockhand and Dockge.">
+<link rel="canonical" href="https://recasaos.org/">
+<meta property="og:site_name" content="ReCasaOS">
 <meta property="og:title" content="ReCasaOS: your whole server, one dashboard">
 <meta property="og:description" content="A container manager stops at containers. ReCasaOS also runs the backups, the alerts, the disks, the virtual machines and your other boxes.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://recasaos.org/">
+<meta property="og:image" content="https://recasaos.org/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ReCasaOS: your whole server, one dashboard. The dashboard with its tiles, disks and apps.">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="color-scheme" content="dark">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ReCasaOS",
+  "url": "https://recasaos.org/",
+  "image": "https://recasaos.org/img/share.jpg",
+  "description": "Open-source, self-hosted server dashboard: Docker and Compose apps, backups with restore, alerts, RAID, virtual machines and a fleet of servers. An independent, community-maintained distribution of CasaOS.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Linux (Debian, Ubuntu)",
+  "license": "https://www.apache.org/licenses/LICENSE-2.0",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "downloadUrl": "https://github.com/ReCasaOS/CasaOS-Install/releases/latest",
+  "sameAs": ["https://github.com/ReCasaOS"]
+}
+</script>
 <style>
 :root {
   --bg: #151515; --surface: #1d1d1d; --line: #303030;
@@ -37,7 +61,7 @@ code { font-family: var(--mono); font-size: 0.9em; }
 .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 section { padding: 88px 0; }
 .lead { color: var(--muted); font-size: 1.2rem; max-width: 34em; }
-.eyebrow { font: 600 0.8rem/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
+.eyebrow { font: 600 0.8rem/1.4 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
 em.hl { font-style: normal; color: var(--accent); }
 
 header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 20px; padding-bottom: 20px; }
@@ -196,7 +220,7 @@ footer p { max-width: 62em; }
   <div class="dots" data-speed="-0.12"></div>
   <div class="wrap">
     <div>
-      <p class="eyebrow">Open-source server dashboard</p>
+      <p class="eyebrow">Open-source dashboard for servers and homelabs</p>
       <h1>Your whole server.<br><em class="hl">One dashboard.</em></h1>
       <p class="lead">A container manager stops at containers. ReCasaOS also runs the backups, the alerts, the disks, the virtual machines and the other boxes you own. Installed with one command.</p>
       <div class="cmd">
@@ -314,6 +338,7 @@ footer p { max-width: 62em; }
   <div class="wrap">
     <p class="eyebrow">Features</p>
     <h2>And it is good at containers, too.</h2>
+    <p class="lead" style="margin-top:18px">Looking for a self-hosted alternative to Portainer, Dockhand or Dockge? Keep your Compose files: stacks you started with <code>docker compose up</code> are listed as apps.</p>
     <div class="grid">
       <article class="card">
         <span class="n">01 Compose</span>
